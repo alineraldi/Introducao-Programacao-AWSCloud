@@ -1,0 +1,3 @@
+Esse arquivo será o meu primeiro arquivo enviado para repositório remoto!
+git branch -m main : comando usado para alinhar com a main do nosso repositório local
+git push -u origin main : comando usado para levar o codigo até o repositório remoto
