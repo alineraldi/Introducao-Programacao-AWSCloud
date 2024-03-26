@@ -1,0 +1,8 @@
+CREATE TABLE aluno (
+  ID serial primary key,
+  nome varchar(30) NOT NULL,
+  email varchar(30) not NULL,
+  endereco varchar(50) not NULL
+);
+
+SELECT * from aluno
