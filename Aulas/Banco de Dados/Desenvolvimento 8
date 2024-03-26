@@ -1,0 +1,38 @@
+create table disciplinas (
+  ID_disciplina INT PRIMARY KEY,
+  nome VARCHAR(50) not NULL,
+  horario TIME(0) not NULL,
+  sala INT not NULL
+);
+
+CREATE table alunos (
+  ID_aluno SERIAL primary KEY,
+  nome VARCHAR(30) not null,
+  email VARCHAR(30),
+  telefone INT not NULL,
+  disciplinas_id INT, 
+  CONSTRAINT fk_disciplinas FOREIGN KEY (disciplinas_id) REFERENCES disciplinas (ID_disciplina)
+);
+
+INSERT INTO disciplinas (id_disciplina, nome, horario, sala) VALUES
+    (1, 'Fundamentos de Desenho', '13:30', 652),
+    (2, 'Perspectiva II', '19:00', 851),
+    (3, 'Composição de Cena', '07:00', 347),
+    (4, 'Retrato: Luz e sombra', '14:30', 347);
+
+
+INSERT INTO alunos (id_aluno, nome, email, telefone, disciplinas_id) VALUES
+	(111, 'Álvaro Rosa', 'alvarorosa@gmail.com', 99867412, 2),
+    (222, 'Sandra Orquídea', 'sandrao@hotmail.com', 85671523, 1),
+    (333, 'Alice Gerânio', 'geranioalice@uol.com', 98564225, 2),
+    (444, 'Daphne Antúrio', 'daphneee@gmail.com', 84761352, 4),
+    (555, 'Miguel Crisântemo', 'miguelcris@yahoo.com.br', 91234568, 3)
+    
+DELIMITER //
+CREATE TRIGGER exclusao_disciplina 
+AFTER DELETE ON disciplina
+FOR EACH ROW
+BEGIN
+DELETE FROM alunos WHERE id = OLD.id;
+END //
+DELIMITER
