@@ -5,4 +5,9 @@ CREATE TABLE aluno (
   endereco varchar(50) not NULL
 );
 
-SELECT * from aluno
+INSERT INTO aluno (nome, email, endereco) VALUES
+    ('Amanda', 'amandacardoso@gmail.com', 'Rua Riachuelo, 250'),
+    ('Bruno', 'brunorodrigues@gmailm.com', 'Rua Sant Souci, 25'),
+    ('Vitor', 'vitorcoelho@gmail.com', 'Rua Bourg, 2500')
+
+SELECT * FROM aluno
