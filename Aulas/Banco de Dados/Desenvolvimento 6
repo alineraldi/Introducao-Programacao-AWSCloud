@@ -1,3 +1,6 @@
+CREATE DATABASE escola;
+USE escola;
+
 CREATE TABLE aluno (
   ID serial primary key,
   nome varchar(30) NOT NULL,
