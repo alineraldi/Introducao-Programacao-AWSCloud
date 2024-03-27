@@ -1,2 +1,15 @@
 // Uma loja tem um banco de dados que contém todo o controle de vendas de produtos e de cadastro de clientes. Pensando nisso, crie uma função para somar todos os clientes que foram cadastrados na loja durante um dia.
 
+create table cadastro_clientes (
+  nome VARCHAR(50)
+  data_cadastro DATE,
+  data_pesquisa DATE,
+  total_clientes INT,
+);
+
+CREATE OR REPLACE FUNCTION total_clientes_hoje(data_pesquisa DATE)
+RETURN INT
+AS
+BEGIN
+RETURN (SELECT COUNT(*) FROM cadastro_clientes where data_cadastro = data_pesquisa);
+END total_clientes_hoje;
