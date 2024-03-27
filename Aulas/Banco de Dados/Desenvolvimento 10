@@ -13,3 +13,5 @@ AS
 BEGIN
 RETURN (SELECT COUNT(*) FROM cadastro_clientes where data_cadastro = data_pesquisa);
 END total_clientes_hoje;
+
+SELECT total_clientes_hoje('2024-03-27')
