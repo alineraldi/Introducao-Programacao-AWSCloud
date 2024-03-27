@@ -16,3 +16,4 @@ BEGIN
 end $$
 DELIMITER
 
+CALL relatorio
