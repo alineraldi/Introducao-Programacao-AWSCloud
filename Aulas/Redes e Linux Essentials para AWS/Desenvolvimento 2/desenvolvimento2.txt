@@ -1,0 +1,54 @@
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+[ec2-user@ip-172-31-5-107 ~]$ ssh -i C:/Users/aline/Desktop/ChaveAWSEC2.pem ec2-user@3.145.152.19
+Warning: Identity file C:/Users/aline/Desktop/ChaveAWSEC2.pem not accessible: No such file or directory.
+The authenticity of host '3.145.152.19 (3.145.152.19)' can't be established.
+ED25519 key fingerprint is SHA256:ffZOUR2DU6i4/qMV3VHB2HQDcv3I4rCxCtWq3feiWRk.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '3.145.152.19' (ED25519) to the list of known hosts.
+ec2-user@3.145.152.19: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
+[ec2-user@ip-172-31-5-107 ~]$ mkdir Desenvolvimento
+[ec2-user@ip-172-31-5-107 ~]$ touc texto1
+-bash: touc: command not found
+[ec2-user@ip-172-31-5-107 ~]$ touch texto1
+[ec2-user@ip-172-31-5-107 ~]$ nano texto1
+[ec2-user@ip-172-31-5-107 ~]$ ls
+Desenvolvimento  texto1
+[ec2-user@ip-172-31-5-107 ~]$ cat texto1
+João da Silva
+RG: 123456789
+Instrumento: Guitarra
+Maria Oliveira
+RG: 987654321
+Instrumento: Baixo
+Pedro Santos
+RG: 456789123
+Instrumento: Bateria
+Ana Souza
+RG: 789123456
+Instrumento: Teclado
+Lucas Pereira
+RG: 321654987
+Instrumento: Violão
+Carla Costa
+RG: 654321987
+Instrumento: Voz
+[ec2-user@ip-172-31-5-107 ~]$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        4.0M     0  4.0M   0% /dev
+tmpfs           475M     0  475M   0% /dev/shm
+tmpfs           190M  2.9M  188M   2% /run
+/dev/xvda1      8.0G  1.6G  6.5G  19% /
+tmpfs           475M     0  475M   0% /tmp
+/dev/xvda128     10M  1.3M  8.7M  13% /boot/efi
+tmpfs            95M     0   95M   0% /run/user/1000
+[ec2-user@ip-172-31-5-107 ~]$ 
