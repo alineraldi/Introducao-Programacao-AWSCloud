@@ -36,7 +36,7 @@
 
 ###
 
-<p align="left">Clone este repositório: | Clone this repository:<br>git clone https://github.com/seu-usuario/curso-introducao-programacao.git<br><br>Navegue pelas pastas e explore os diferentes projetos e exercícios.<br>Navigate through the folders and explore the various projects and exercises.</p>
+<p align="left">Clone este repositório: | Clone this repository:<br>git clone https://github.com/alineraldi/Introducao-Programacao-AWSCloud<br><br>Navegue pelas pastas e explore os diferentes projetos e exercícios.<br>Navigate through the folders and explore the various projects and exercises.</p>
 
 ###
 
